@@ -1,0 +1,23 @@
+[project]
+name = "advanced-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "arxiv>=4.0.1",
+    "chromadb>=1.5.9",
+    "google-genai>=2.17.0",
+    "ipykernel==7.3.0",
+    "langchain==1.3.11",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.5.3",
+    "langchain-openai>=1.4.2",
+    "langgraph>=1.2.10",
+    "pipdeptree>=4.2.0",
+    "pymupdf>=1.28.2",
+    "pypdf>=6.15.0",
+    "python-dotenv>=1.2.2",
+    "sentence-transformers>=5.7.0",
+    "typesense>=2.0.0",
+]
