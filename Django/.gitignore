@@ -1,0 +1,6 @@
+.vscode/
+# we can use below command for ignoring pycache from getting commit
+**/__pycache__/  
+**/migrations
+**/static
+**/media

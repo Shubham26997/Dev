@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Notes App{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'notes/css/styles.css' %}">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container">
+        <h1 class="logo">📝 Notes</h1>
+        <nav>
+            <a href="{% url 'notes:list_note' %}">All Notes</a>
+            <a href="{% url 'notes:create_note' %}">Create Note</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+                <div class="alert {{ message.tags }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% block content %}{% endblock %}
+</main>
+
+<script src="{% static 'notes/js/notes.js' %}"></script>
+</body>
+</html>

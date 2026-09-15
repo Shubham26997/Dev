@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Django Webpage</title>
+</head>
+<body>
+    Hello Welcome to Django <br>
+    <a href = http://127.0.0.1:8000/removepunc> Remove Punc Char </a><br>
+    <a href = http://127.0.0.1:8000/titlechar> Capital Char </a><br>
+    <a href = http://127.0.0.1:8000/newlineremove> Remove New Line </a><br>
+    <a href = http://127.0.0.1:8000/spaceremove> Remove Space </a><br>
+    <a href = http://127.0.0.1:8000/charcount> Get Char count </a><br>
+
+    <h1>Welcome to the text analyzer</h1>
+    <p><strong>Enter the text below:</strong></p>
+    <form action="/spacecall", method="get">
+        <textarea name='text' style="width: 1153px; height: 197px;"></textarea><br>
+        <input type="checkbox" name="spaceremove">Remove Space<br>
+        <button type="submit">
+            Analyse the text
+        </button>
+    </form>
+    
+</body>
+</html>

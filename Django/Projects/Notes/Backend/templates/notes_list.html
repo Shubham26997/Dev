@@ -1,0 +1,25 @@
+{% extends "notes/templates/base.html" %}
+
+{% block title %}My Notes{% endblock %}
+
+{% block content %}
+<h2 class="page-title">My Notes</h2>
+
+{% if notes %}
+<div class="notes-grid">
+    {% for note in notes %}
+        <div class="note-card">
+            <h3>{{ note.title }}</h3>
+            <p>{{ note.content|truncatechars:120 }}</p>
+
+            <div class="note-actions">
+                <a href="{% url 'notes:edit' note.id %}" class="btn btn-secondary">Edit</a>
+                <a href="{% url 'notes:delete' note.id %}" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% else %}
+<p class="empty-text">No notes yet. Create your first note!</p>
+{% endif %}
+{% endblock %}

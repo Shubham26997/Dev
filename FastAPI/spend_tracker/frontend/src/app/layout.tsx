@@ -1,0 +1,26 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import ClientShell from "./components/ClientShell";
+
+export const metadata: Metadata = {
+  title: "Spendly",
+  description: "Personal expense tracker",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})()`,
+          }}
+        />
+      </head>
+      <body suppressHydrationWarning className="bg-gray-50 dark:bg-gray-950 min-h-screen font-sans transition-colors duration-200">
+        <ClientShell />
+        <div className="pt-14">{children}</div>
+      </body>
+    </html>
+  );
+}

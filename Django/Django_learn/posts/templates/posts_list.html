@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts Listing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f9ff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 30px;
+        }
+        .post-container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .post-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: 18px;
+        }
+        .post-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #0055aa;
+        }
+        .post-content {
+            font-size: 15px;
+            color: #333;
+            margin-top: 8px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 12px;
+            text-decoration: none;
+            background: #0077cc;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        a:hover {
+            background: #005999;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Latest Posts</h1>
+
+    <div class="post-container">
+
+        <!-- Dummy Post 1 -->
+        <div class="post-card">
+            <div class="post-title">How to Become a Better Coder</div>
+            <div class="post-content">
+                Practice daily, read documentation, and build real projects. Consistency matters a lot!
+            </div>
+            <a href="#">Read More</a>
+        </div>
+
+        <!-- Dummy Post 2 -->
+        <div class="post-card">
+            <div class="post-title">What is Django?</div>
+            <div class="post-content">
+                Django is a high-level Python web framework that encourages rapid development.
+            </div>
+            <a href="#">Read More</a>
+        </div>
+
+        <!-- Dummy Post 3 -->
+        <div class="post-card">
+            <div class="post-title">Why Learn Docker?</div>
+            <div class="post-content">
+                Docker helps you run applications in isolated environments, making deployments easier.
+            </div>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

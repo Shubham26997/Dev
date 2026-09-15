@@ -1,0 +1,32 @@
+# Dependencies (will be installed fresh in Docker)
+node_modules
+npm-debug.log
+
+# Build outputs (will be created in Docker)
+build
+dist
+.next
+
+# Version control
+.git
+.gitignore
+
+# Environment files (should use Docker env vars instead)
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode
+.idea
+
+# Documentation
+README.md
+docs/
+
+# Testing
+coverage/
+.nyc_output/
