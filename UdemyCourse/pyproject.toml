@@ -1,0 +1,25 @@
+[project]
+name = "udemycourse"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiofiles>=25.1.0",
+    "docx2txt>=0.9",
+    "fastapi[standard]>=0.135.2",
+    "langchain>=1.2.13",
+    "langchain-community>=0.4.1",
+    "langchain-openai>=1.1.12",
+    "langchain-qdrant>=1.1.0",
+    "langchain-text-splitters>=1.1.1",
+    "openai>=2.30.0",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.1",
+    "pipdeptree>=2.34.0",
+    "pypdf>=6.9.2",
+    "python-dotenv>=1.2.2",
+    "reportlab>=4.4.10",
+    "tiktoken>=0.12.0",
+    "uvicorn>=0.42.0",
+]

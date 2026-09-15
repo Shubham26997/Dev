@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shubham Goel - Resume</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#1a1a1a; background:#fff; line-height:1.32; }
+.page { max-width:900px; margin:0 auto; padding:10px 36px 8px; }
+.name { font-size:24px; font-weight:700; color:#111; }
+.contact { font-size:12px; color:#444; margin-top:3px; }
+.contact a { color:#1a5ca8; text-decoration:none; }
+hr { border:none; border-top:1.5px solid #111; margin:5px 0 3px; }
+.sec { font-size:12px; font-weight:700; letter-spacing:1.1px; text-transform:uppercase; color:#333; border-bottom:0.5px solid #bbb; padding-bottom:1px; margin:6px 0 3px; }
+.summary { font-size:13px; line-height:1.42; }
+.job { margin-bottom:4px; }
+.jh { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; }
+.jt { font-size:13.5px; font-weight:700; color:#111; }
+.jc { font-size:12.5px; color:#444; font-style:italic; margin-top:0px; }
+.jd { font-size:12px; color:#555; white-space:nowrap; }
+ul { padding-left:15px; margin-top:1px; }
+li { font-size:12.5px; line-height:1.35; margin-bottom:1px; color:#222; }
+.skills { font-size:12.5px; line-height:1.48; }
+.edu-title { font-size:13.5px; font-weight:700; }
+.edu-sub { font-size:12.5px; color:#444; margin-top:1px; }
+.cert { font-size:12.5px; }
+@media print { .page { padding:8px 20px; } body { -webkit-print-color-adjust:exact; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="name">Shubham Goel</div>
+<div class="contact">
+  Ghaziabad, Uttar Pradesh &nbsp;|&nbsp; 7871232726 &nbsp;|&nbsp;
+  <a href="mailto:shubhamgoel386@gmail.com">shubhamgoel386@gmail.com</a> &nbsp;|&nbsp;
+  <a href="https://www.linkedin.com/in/shubhamgoel26">linkedin.com/in/shubhamgoel26</a> &nbsp;|&nbsp;
+  <a href="https://github.com/Shubham26997">github.com/Shubham26997</a>
+</div>
+<hr>
+
+<div class="sec">Professional Summary</div>
+<p class="summary">Senior Backend Engineer (SDE II) with 5.5+ years building high-throughput Python systems using Django, FastAPI, PostgreSQL, and Kafka. Experienced in microservices, event-driven design, RAG pipelines, LangChain, and Docker/AWS deployments. Delivered production APIs processing 500K+ daily events with sub-second latency across GST automation and AI-powered document retrieval workflows.</p>
+
+<div class="sec">Professional Experience</div>
+
+<div class="job">
+<div class="jh">
+  <div><div class="jt">Senior Backend Engineer (SDE II)</div><div class="jc">Masters India IT Solutions Pvt. Ltd., Uttar Pradesh</div></div>
+  <div class="jd">07/2022 – Present</div>
+</div>
+<ul>
+  <li>Built production-grade REST APIs using Django and FastAPI with OpenAPI/Swagger documentation, handling 500K+ daily requests for GST invoice automation with high availability and low latency.</li>
+  <li>Designed event-driven pipelines using Kafka (Redpanda + Faust), Celery, Redis, and Prefect, processing 500K+ invoice events/day at under 800ms latency; decoupled 4 services, reducing failure blast radius by ~70%.</li>
+  <li>Architected a production RAG pipeline using LangChain and Qdrant vector DB for metal price data; applied 7-day time-based chunking and context-crisping, achieving sub-2s retrieval and ~60% reduction in LLM token usage; built an AI chatbot on top enabling natural language querying for business analysts.</li>
+  <li>Integrated Azure Custom Form Recognizer OCR into the production pipeline, automating extraction of key-value pairs and table data from GST invoices, reducing manual effort by ~80%.</li>
+  <li>Optimized PostgreSQL and MongoDB queries with indexing strategies for high-volume data retrieval; containerized microservices using Docker across dev, staging, and production environments.</li>
+  <li>Conducted load testing using JMeter on AWS EC2-hosted APIs to identify bottlenecks and optimize performance under heavy traffic.</li>
+  <li>Wrote unit and integration tests using Python's unittest framework with 80%+ code coverage; integrated into CI/CD pipeline for automated regression on every PR.</li>
+  <li>Owned system architecture for new modules, authored design documents, and mentored 2 junior engineers through code reviews, establishing Python standards adopted across the backend team.</li>
+</ul>
+</div>
+
+<div class="job">
+<div class="jh">
+  <div><div class="jt">Assistant System Engineer</div><div class="jc">Tata Consultancy Services (TCS), Uttar Pradesh / WFH</div></div>
+  <div class="jd">01/2021 – 07/2022</div>
+</div>
+<ul>
+  <li>Designed and implemented ETL pipelines using Azure Data Factory with BDD framework testing, ensuring data integrity and quality across business-critical workflows.</li>
+  <li>Developed Databricks notebooks for complex data transformations; streamlined Python testing via Jenkins CI/CD automation with Allure reporting, improving release confidence.</li>
+  <li>Collaborated cross-functionally to translate business requirements into technical solutions and deliver projects within Agile sprint cycles.</li>
+</ul>
+</div>
+
+<div class="sec">Technical Skills</div>
+<p class="skills">
+  <strong>Languages &amp; Frameworks:</strong> Python, Django, FastAPI <br>
+  <strong>Databases:</strong> PostgreSQL, MongoDB, Redis, Oracle <br>
+  <strong>Messaging &amp; Async:</strong> Kafka, Redpanda, Faust, Celery, Prefect <br>
+  <strong>Testing:</strong> unittest, pytest, JMeter, BDD <br>
+  <strong>AI / ML:</strong> LangChain, RAG, Qdrant (Vector DB), Prompt Engineering, LLM Integration, Pandas <br>
+  <strong>DevOps &amp; Cloud:</strong> Docker, AWS EC2, Azure, Git, Jenkins, CI/CD <br>
+  <strong>API &amp; Design:</strong> REST, OpenAPI/Swagger, Microservices, Event-Driven Architecture, System Design <br>
+  <strong>Other:</strong> ETL Pipelines, Databricks, Agile/Scrum
+</p>
+
+<div class="sec">Education</div>
+<div class="jh">
+  <div class="edu-title">B.Tech — Electrical and Electronics Engineering</div>
+  <div class="jd">2020</div>
+</div>
+<div class="edu-sub">SRM Institute of Science &amp; Technology (Deemed University) — CGPA: 9.67 / 10</div>
+
+<div class="sec">Certifications &amp; Awards</div>
+<div class="cert">Microsoft Certified: Azure Fundamentals (AZ-900) &nbsp;|&nbsp; Best Team Lead &amp; Best Team Member — Tata Consultancy Services</div>
+
+</div>
+</body>
+</html>
