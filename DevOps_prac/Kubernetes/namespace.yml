@@ -1,0 +1,6 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: nginx
+
+# use "kubectl apply -f namespace.yml" to create & update the namespace.yml file

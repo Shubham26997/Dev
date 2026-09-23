@@ -1,0 +1,36 @@
+kind: Deployment
+apiVersion: apps/v1
+
+metadata:
+  name: nginx-deployment
+  namespace: nginx
+
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      name: nginx-dep-pod
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx-pod
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - mountPath: "/var/www/html/"
+              name: my-volume
+      volumes:
+        - name: my-volume
+          persistentVolumeClaim:
+            claimName: local-pvc
+
+# kubectl apply -f deployment.yml
+# kubectl get pods -n nginx
+# kubectl get deployments -n nginx
+# kubectl scale deployment/nginx-deployment -n nginx --replicas=5
+# kubectl scale deployment/nginx-deployment -n nginx --replicas=1

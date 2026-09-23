@@ -1,0 +1,21 @@
+kind: Job
+apiVersion: batch/v1
+
+metadata:
+  name: nginx-job
+  namespace: nginx
+
+spec:
+  completions: 1
+  parallelism: 2
+  template:
+    metadata:
+      name: nginx-job-pod
+      labels:
+        app: nginx-job
+    spec:
+        containers:
+        - name: nginx-job-container
+          image: busybox:latest
+          command: ["sh", "-c", "echo I am inside busybox && sleep 10"]
+        restartPolicy: Never
